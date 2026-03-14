@@ -39,18 +39,62 @@ body{
 /* now we are developing completely different stuffs  */
 
 #second-part{
-    display: flex;
+    /* display: flex; */
     margin-top: 50px;
-    justify-content: center;
+    /* justify-content: center; */
     background-color: cadetblue;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
 }
 
-#text{
+#photo1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 60vh;
     height: 40vh;    
     background-color: rgb(184, 145, 94);
-    padding: 10px;
+    background-image: url("houseINbeautifulView.jpg");
+    background-size: cover;
+    border: 2px solid black;
+}
+
+#increment-btn{    
+    display: inline-block;
+    background-color: beige;
+    color: blue;
+    border: none;
+    padding: 3px;
+}
+
+#counter{
+    font-size: 50px;
+    color: white;
+    text-shadow: 3px 3px 7px black;
+}
+
+#people-entered{
+    color: white;
+    text-shadow: 3px 3px 7px black;
+}
+
+#increment-btn:hover{
+    background-color: blanchedalmond;
+    color: black;
+}
+
+#decrement-btn{    
+    display: inline-block;
+    background-color: beige;
+    color: blue;
+    border: none;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+#decrement-btn:hover{
+    background-color: blanchedalmond;
+    color: black;
 }
