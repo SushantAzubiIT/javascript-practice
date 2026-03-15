@@ -98,3 +98,55 @@ body{
     background-color: blanchedalmond;
     color: black;
 }
+
+#calculator-txt{
+    color: whitesmoke;
+    text-shadow: 5px 5px 10px blue;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: burlywood;
+    /* display: inline-block; */
+    margin: 20px auto;
+    width: max-content;
+    border-radius: 7px;
+    border: 2px solid whitesmoke;
+}
+
+#actual-calculator-container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(105, 156, 147);
+    width: 30vw;
+    height: 51vh;
+    margin: 40px auto;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#display{
+    background-color: bisque;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 4px;
+    margin-bottom: 4px;
+    text-align: right;
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+.numberholder{
+
+    width: 65px;
+    height: 60px;
+    background-color: rgb(95, 114, 160);
+    margin: auto auto;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
