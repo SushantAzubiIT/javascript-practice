@@ -38,3 +38,73 @@ function changemode(){
     }
 }
 
+
+
+// calculator Activated ............
+let display=document.getElementById("display")
+
+function ac(){
+    display.innerText=0
+}
+
+
+function num_1(){
+    display.innerText+= 1
+}
+
+function num_2(){
+    display.innerText+= 2
+}
+
+function num_3(){
+    display.innerText+= 3
+}
+
+function num_4(){
+    display.innerText+= 4
+}
+
+function num_5(){
+    display.innerText+= 5
+}
+
+function num_6(){
+    display.innerText+= 6
+}
+
+function num_7(){
+    display.innerText+= 7
+}
+
+function num_8(){
+    display.innerText+= 8
+}
+
+function num_9(){
+    display.innerText+= 9
+}
+
+function num_0(){
+    display.innerText+= 0
+}
+
+function oadd(){
+    display.innerText+= "+"
+}
+
+function omin(){    
+    display.innerText+= "-"
+}   
+
+function omul(){
+    display.innerText+= "*"
+}
+
+function odiv(){
+    display.innerText+= "/"
+}
+
+function omod(){
+    display.innerText+= "mod"
+}
+

@@ -134,6 +134,10 @@ body{
     border: 1px solid black;
 }
 
+#actual-calculator-container:hover{
+    background-color: rgb(105, 170, 147);
+}
+
 #display{
     background-color: bisque;
     width: 100%;
@@ -159,4 +163,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.numberholder:hover{
+    background-color: rgb(95, 25, 180);
+    cursor: pointer;
 }
