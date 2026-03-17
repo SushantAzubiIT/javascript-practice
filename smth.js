@@ -42,69 +42,141 @@ function changemode(){
 
 // calculator Activated ............
 let display=document.getElementById("display")
+let pressedEqualButton= 0
 
 function ac(){
-    display.innerText=0
+    display.innerText=""
 }
 
 
 function num_1(){
+    
+    if (pressedEqualButton>= 1){
+    ac()
+    }
     display.innerText+= 1
+    pressedEqualButton= 0
 }
 
 function num_2(){
+
+    if (pressedEqualButton>= 1){
+    ac()
+    }
     display.innerText+= 2
+    pressedEqualButton= 0
 }
 
 function num_3(){
+    if (pressedEqualButton>= 1){
+    ac()
+    }
     display.innerText+= 3
+    pressedEqualButton= 0
 }
 
 function num_4(){
+    if (pressedEqualButton>= 1){
+    ac()
+    }
     display.innerText+= 4
+    pressedEqualButton= 0
 }
 
 function num_5(){
+    if (pressedEqualButton>= 1){
+    ac()
+    }
     display.innerText+= 5
+    pressedEqualButton= 0
 }
 
 function num_6(){
+    if (pressedEqualButton>= 1){
+    ac()
+    }
     display.innerText+= 6
+    pressedEqualButton= 0
 }
 
 function num_7(){
+    if (pressedEqualButton>= 1){
+    ac()
+    }
     display.innerText+= 7
+    pressedEqualButton= 0
 }
 
 function num_8(){
+    if (pressedEqualButton>= 1){
+    ac()
+    }
     display.innerText+= 8
+    pressedEqualButton= 0
+
 }
 
 function num_9(){
+    if (pressedEqualButton>= 1){
+    ac()
+    }
     display.innerText+= 9
+    pressedEqualButton= 0
 }
 
 function num_0(){
+    if (pressedEqualButton>= 1){
+    ac()
+    }
     display.innerText+= 0
+    pressedEqualButton= 0
 }
 
 function oadd(){
     display.innerText+= "+"
+    if (pressedEqualButton>= 1){
+    pressedEqualButton=0
+    }
 }
 
 function omin(){    
     display.innerText+= "-"
+    if (pressedEqualButton>= 1){
+    pressedEqualButton=0
+    }
 }   
 
 function omul(){
     display.innerText+= "*"
+    if (pressedEqualButton>= 1){
+    pressedEqualButton=0
+    }
 }
 
 function odiv(){
     display.innerText+= "/"
+    if (pressedEqualButton>= 1){
+    pressedEqualButton=0
+    }
+
 }
 
 function omod(){
-    display.innerText+= "mod"
+    display.innerText+= "%"
+    if (pressedEqualButton>= 1){
+    pressedEqualButton=0
+    }
+
+}
+
+function isequal(){
+    try{
+    display.innerText = eval(display.innerText)
+    }
+    catch{
+        display.innerText="error"
+    }
+
+    pressedEqualButton=pressedEqualButton+1
 }
 
