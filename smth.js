@@ -12,6 +12,14 @@ function decrement(){
     document.getElementById("counter").innerText = count
 }
 
+function save(){
+    let prevText =document.getElementById("prev-text")
+        prevText.innerText+=":"+count
+    
+    count=0
+    document.getElementById("counter").innerText= count
+}
+
 document.getElementById("menu").innerText="About"
 document.getElementById("book-a-table").innerText="This is counter"
 document.getElementById("catering").innerText="switch-mode"
@@ -29,3 +37,4 @@ function changemode(){
         isdark=false    
     }
 }
+
